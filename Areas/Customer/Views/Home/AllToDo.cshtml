@@ -1,0 +1,96 @@
+﻿@if (TempData["SuccessMessage"] != null)
+{
+    <div id="successMessage" class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+ <div class="container">
+     <div class=" d-flex justify-content-between align-items-center">
+         <h1 class="category-title">All ToDos</h1>
+         <a class="btn btn-success" href="/Customer/Home/Create">Create New</a>
+     </div>
+
+     <table class="table table-hover my-3">
+         <thead>
+             <tr class="bg-dark text-white">
+                 <th scope="col">#</th>
+                 <th scope="col">Name</th>
+                 <th scope="col">DeadLine</th>
+                 <th scope="col">ToDo File</th>
+                 <th scope="col">download File</th>
+                 <th scope="col">Actions</th>
+             </tr>
+         </thead>
+         <tbody>
+             @foreach (var item in Model)
+             {
+                 <tr> 
+                     <th scope="row">@item.Id</th>
+                     <td>@item.Name</td>
+                     <td>@item.DeadLine</td>
+
+                    <td>
+                        @if (!string.IsNullOrEmpty(item.File))
+                        {
+                            var fileExtension = System.IO.Path.GetExtension(item.File);
+
+                            if (fileExtension == ".jpg" ||  fileExtension == ".png" )
+                            {
+                                <img src="~/ToDoFiles/@item.File" width="150" height="150" />
+                            }
+                            else if (fileExtension == ".pdf")
+                            {
+                                <embed src="~/ToDoFiles/@item.File" type="application/pdf" width="150" height="150" />
+                            }
+                             
+                        }
+                    </td>
+                     <td><a href="~/ToDoFiles/@item.File" download>download</a></td>
+
+                     <td>
+                        <a class="btn btn-warning" href="/Customer/Home/Edit?id=@item.Id">Edit</a>
+
+<a href="#" class="btn btn-danger" onclick="confirmDelete('@item.Id')">Delete</a>                    </td>
+                   
+
+
+                 </tr>
+
+             }
+
+         </tbody>
+     </table>
+
+  
+
+              
+   <script>
+  function confirmDelete(id) {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "/Customer/Home/Delete?id=" + id;
+            }
+        });
+    }
+
+    // إخفاء رسالة النجاح بعد 6 ثوانٍ
+    setTimeout(function () {
+        var message = document.getElementById("successMessage");
+        if (message) {
+            message.style.display = "none";
+        }
+    }, 6000);
+</script>
+
+
+    
+ 
+    
