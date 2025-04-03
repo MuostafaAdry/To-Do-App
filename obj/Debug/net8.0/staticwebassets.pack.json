@@ -2,11 +2,11 @@
   "Files": [
     {
       "Id": "C:\\Users\\user\\Desktop\\.NetTasks\\To-Do-List\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\To-Do-List.bundle.scp.css",
-      "PackagePath": "staticwebassets\\To-Do-List.bundle.scp.css"
+      "PackagePath": "staticwebassets\\To-Do-List.23sdemf3fb.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\.NetTasks\\To-Do-List\\wwwroot\\ToDoFiles\\6791c57c-c5a8-4ed4-9371-c9fddbcdd0f8.jpg",
-      "PackagePath": "staticwebassets\\ToDoFiles\\6791c57c-c5a8-4ed4-9371-c9fddbcdd0f8.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\.NetTasks\\To-Do-List\\wwwroot\\ToDoFiles\\c661bbdb-6303-430c-a759-8591c46d77bf.png",
+      "PackagePath": "staticwebassets\\ToDoFiles\\c661bbdb-6303-430c-a759-8591c46d77bf.png"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\.NetTasks\\To-Do-List\\wwwroot\\css\\site.css",
@@ -247,6 +247,10 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\.NetTasks\\To-Do-List\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.To-Do-List.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.To-Do-List.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -258,3 +258,7 @@ C:\Users\user\Desktop\.NetTasks\To-Do-List\bin\Debug\net8.0\runtimes\win\lib\net
 C:\Users\user\Desktop\.NetTasks\To-Do-List\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\user\Desktop\.NetTasks\To-Do-List\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\user\Desktop\.NetTasks\To-Do-List\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\user\Desktop\.NetTasks\To-Do-List\bin\Debug\net8.0\To-Do-List.staticwebassets.endpoints.json
+C:\Users\user\Desktop\.NetTasks\To-Do-List\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\user\Desktop\.NetTasks\To-Do-List\obj\Debug\net8.0\staticwebassets\msbuild.To-Do-List.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\user\Desktop\.NetTasks\To-Do-List\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

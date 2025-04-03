@@ -8,8 +8,9 @@
     "\\Areas\\Customer\\Views\\Home",
     "\\DataAccess",
     "\\Models",
-    "\\Views"
+    "\\Views",
+    "\\wwwroot"
   ],
-  "SelectedNode": "\\To-Do-List.sln",
+  "SelectedNode": "\\newTODO.sln",
   "PreviewInSolutionExplorer": false
 }
